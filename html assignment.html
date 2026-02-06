@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Excellence Institute | Home</title>
+    <style>
+        /* Basic Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { line-height: 1.6; color: #333; }
+        
+        /* Navigation */
+        nav { background: #003366; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        nav h1 { font-size: 1.5rem; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; }
+        nav ul li a:hover { color: #ffcc00; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images.unsplash.com'); 
+                background-size: cover; background-position: center; height: 80vh; display: flex; flex-direction: column; 
+                justify-content: center; align-items: center; text-align: center; color: white; }
+        .hero h2 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+        .cta-btn { background: #ffcc00; color: #003366; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+        /* Sections */
+        section { padding: 60px 10%; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #003366; }
+
+        /* Courses Grid */
+        .courses-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .course-card { background: #f4f4f4; padding: 20px; border-radius: 8px; border-top: 5px solid #003366; transition: 0.3s; }
+        .course-card:hover { transform: translateY(-10px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+        /* Footer */
+        footer { background: #222; color: white; text-align: center; padding: 20px 0; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>GE Institute</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <h2>Empowering the Future</h2>
+        <p>A leading center for advanced learning and skill development.</p>
+        <a href="#courses" class="cta-btn">Explore Programs</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h3 class="section-title">About Our Institute</h3>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+            Global Excellence Institute is dedicated to providing world-class education in the fields of technology, management, and arts. With a faculty of over 200 experts and modern facilities, we prepare students for real-world challenges.
+        </p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" style="background: #fff;">
+        <h3 class="section-title">Our Popular Programs</h3>
+        <div class="courses-container">
+            <div class="course-card">
+                <h4>Computer Science</h4>
+                <p>Advanced coding, AI, and software engineering tracks.</p>
+            </div>
+            <div class="course-card">
+                <h4>Business Management</h4>
+                <p>Focusing on leadership, marketing, and global finance.</p>
+            </div>
+            <div class="course-card">
+                <h4>Graphic Design</h4>
+                <p>Master visual communication and modern digital arts.</p>
+            </div>
+            <div class="course-card">
+                <h4>Data Analytics</h4>
+                <p>Turning data into actionable insights for industries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Global Excellence Institute. All Rights Reserved.</p>
+        <p><a href="#" style="color: #ffcc00; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #ffcc00; text-decoration: none;">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
